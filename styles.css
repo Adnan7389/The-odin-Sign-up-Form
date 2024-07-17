@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  min-width: 250px;
+  background-image: url(img/unsplash1.PNG);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  flex-grow: 1;
+}
+
+@font-face {
+  font-family: "Norse";
+  src: url("fonts/norse-webfont.woff2") format("woff2"),
+    url("fonts/norse-webfont.woff") format("woff"),
+    url("fonts/norse-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  margin-top: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  font-family: "Norse", sans-serif;
+  font-size: 36px;
+}
+
+.icon img {
+  width: 70px;
+  height: 70px;
+  margin-left: 50px;
+  margin-right: 10px;
+}
+
+.main {
+  flex-grow: 1;
+}
+.header,
+.form,
+.buttons {
+  padding-left: 26px;
+}
+
+.header {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  border-width: 1px;
+  border-radius: 4px;
+  width: 180px;
+  padding: 4px;
+}
+
+label {
+  display: block;
+}
+
+.form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.name {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.email-phone {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.password {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.create-account {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 8px 20px;
+  background-color: forestgreen;
+  border: none;
+  border-radius: 8px;
+}
+
+.log-in {
+  border: none;
+  background-color: white;
+  color: forestgreen;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+.error {
+  color: red;
+  display: none;
+}
+
+input:focus {
+  outline: none;
+  /* border: solid 2px plum; */
+  box-shadow: 5px 5px 10px 3px plum;
+}
+
+/* input:invalid {
+  border: 1px solid red;
+} */
+
+/* input:valid {
+  border: 1px solid green;
+} */
